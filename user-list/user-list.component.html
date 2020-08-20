@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-6" style="background-color: red;"></div>
+  <div class="col-6" style="background-color: blue;"></div>
+</div>
+
+
+
+<h3>List of Users currently registered</h3>
+<div class="row">
+  <div class="col-10 offset-1">
+
+<label>
+  You have {{ allUsers.length }} users
+</label>
+<div class="row">
+  <div class="col-6" style="background-color: red;"></div>
+  <div class="col-6" style="background-color: blue;"></div>
+</div>
+
+
+
+
+<table class="table table-bordered table-hover table-striped">
+  <thead class="thread-dark">
+    <tr>
+      <td>Emp Num</td>
+      <td>First Name</td>
+      <td>Last Name</td>
+      <td>User Name</td>
+      <td>Email</td>
+    </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let user of allUsers">
+    <td>{{user.employeeNumber}} </td>
+    <td>{{user.firstName}} </td>
+    <td>{{user.lastName}} </td>
+    <td>{{user.userName}} </td>
+    <td>{{user.email}} </td>
+  </tr>
+</tbody>
+
+</table>
+</div>
+</div>
